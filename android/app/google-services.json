@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "478523704329",
+    "project_id": "primefit-82ca9",
+    "storage_bucket": "primefit-82ca9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478523704329:android:a20f8a8ca1583e129c64d8",
+        "android_client_info": {
+          "package_name": "com.example.primefit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADTWOApH1l2FBCmIF4wSsqjhhpGRvoC1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

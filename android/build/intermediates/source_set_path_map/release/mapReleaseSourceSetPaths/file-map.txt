@@ -1,0 +1,23 @@
+com.example.primefit-jetified-appcompat-resources-1.6.1-0 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\0f448994e490bf59f20aa19226509e50\transformed\jetified-appcompat-resources-1.6.1\res
+com.example.primefit-jetified-savedstate-1.2.0-1 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\2f38bbef3eee1d8f42bd070fd8489e28\transformed\jetified-savedstate-1.2.0\res
+com.example.primefit-jetified-emoji2-1.2.0-2 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\2f9e30b92e09a4c79f34f925067bc407\transformed\jetified-emoji2-1.2.0\res
+com.example.primefit-jetified-activity-1.6.0-3 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\3740fe8624732f53623434565ec1b79a\transformed\jetified-activity-1.6.0\res
+com.example.primefit-jetified-core-ktx-1.12.0-4 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\3ef02704b71f9533625e5003a9da126d\transformed\jetified-core-ktx-1.12.0\res
+com.example.primefit-lifecycle-runtime-2.5.1-5 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\462a58846a77a3ff6e780b6387d80040\transformed\lifecycle-runtime-2.5.1\res
+com.example.primefit-appcompat-1.6.1-6 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\4a06d06ec0ce1c73cc8df2ae11f0f21f\transformed\appcompat-1.6.1\res
+com.example.primefit-core-1.12.0-7 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\5250d48f22b009412a3af5bf87ec0439\transformed\core-1.12.0\res
+com.example.primefit-lifecycle-livedata-core-2.5.1-8 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\7de3946c19aae6f1900f9005f0bde1d1\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.primefit-jetified-annotation-experimental-1.3.0-9 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\7f6d4d2ca89bf1a162879335265e8e72\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.primefit-jetified-startup-runtime-1.1.1-10 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\85879f220671a879b538e8ef16ed1744\transformed\jetified-startup-runtime-1.1.1\res
+com.example.primefit-jetified-lifecycle-viewmodel-savedstate-2.5.1-11 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\95e8b844cada19a422d0e57b94a359f0\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.primefit-lifecycle-viewmodel-2.5.1-12 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\a65485d2621d01c82bb77255a138dce0\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.primefit-jetified-lifecycle-process-2.4.1-13 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\ba3e5a0fcfb8f22b42ff387b28cc41a6\transformed\jetified-lifecycle-process-2.4.1\res
+com.example.primefit-jetified-emoji2-views-helper-1.2.0-14 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\c2bb4cddb87481b6b754c0fdd3839a9b\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.example.primefit-fragment-1.3.6-15 C:\Users\LaptopWala\.gradle\caches\8.12\transforms\f7f4d97ca6096ff71c5c6ae646320077\transformed\fragment-1.3.6\res
+com.example.primefit-pngs-16 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\build\generated\res\pngs\release
+com.example.primefit-resValues-17 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\build\generated\res\resValues\release
+com.example.primefit-packageReleaseResources-18 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.example.primefit-packageReleaseResources-19 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.example.primefit-release-20 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.primefit-main-21 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\src\main\res
+com.example.primefit-release-22 C:\Users\LaptopWala\Documents\flutter hw\primefit\android\src\release\res
