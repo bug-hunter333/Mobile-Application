@@ -1025,54 +1025,53 @@ class _CheckoutPageState extends State<CheckoutPage>
         },
       );
 
-      Future.delayed(Duration(seconds: 3), () {
-        Navigator.of(context).pop();
-        
-        showDialog(
-          context: context,
-          builder: (BuildContext context) {
-            return AlertDialog(
-              backgroundColor: Color(0xFF1a1a1a),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              title: Row(
-                children: [
-                  Icon(Icons.check_circle, color: Colors.green[400], size: 28),
-                  SizedBox(width: 12),
-                  Text(
-                    'Order Placed!',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
-              ),
-              content: Text(
-                'Your order has been successfully placed. You will receive a confirmation email shortly.',
-                style: TextStyle(color: Colors.white70),
-              ),
-              actions: [
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                    Navigator.of(context).popUntil((route) => route.isFirst);
-                  },
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [Colors.green[600]!, Colors.green[400]!],
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Text(
-                      'OK',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                  ),
+     Future.delayed(Duration(seconds: 3), () {
+  Navigator.of(context).pop();
+  
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        backgroundColor: Color(0xFF1a1a1a),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            Icon(Icons.check_circle, color: Colors.green[400], size: 28),
+            SizedBox(width: 12),
+            Text(
+              'Order Placed!',
+              style: TextStyle(color: Colors.white),
+            ),
+          ],
+        ),
+        content: Text(
+          'Your order has been successfully placed. You will receive a confirmation email shortly.',
+          style: TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop(); // Only close the dialog
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.green[600]!, Colors.green[400]!],
                 ),
-              ],
-            );
-          },
-        );
-      });
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                'OK',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+        ],
+      );
+    },
+  );
+});
     }
   }
-}
+    }

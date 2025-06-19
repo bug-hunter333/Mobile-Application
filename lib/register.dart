@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:primefit/Login.dart';
-import 'package:primefit/main.dart';
+// import 'package:primefit/main.dart';
+import 'package:primefit/welcome.dart';
 
 
 // Registration Page

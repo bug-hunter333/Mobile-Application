@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:primefit/Login.dart';
+import 'package:primefit/addtocart.dart';
 import 'package:primefit/homepage.dart';
-// import 'package:primefit/register.dart';
+import 'package:primefit/profilePage.dart';
+import 'package:primefit/search.dart'; // Make sure this path matches the actual file location
+import 'package:primefit/register.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -159,7 +162,7 @@ class Welcome extends StatelessWidget {
                           HapticFeedback.lightImpact();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const HomePage()),
+                            MaterialPageRoute(builder: (context) => const RegistrationPage()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
@@ -203,23 +206,12 @@ class Welcome extends StatelessWidget {
                     
                     const SizedBox(height: 20),
                     
-                    // Social proof
-                    Row(
+                    // Social proof section (placeholder)
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // Icon(
-                        //   Icons.star,
-                        //   color: Colors.amber,
-                        //   size: 16,
-                        // ),
-                        const SizedBox(width: 4),
-                        // Text(
-                        //   '4.8 • Trusted by 50K+ athletes',
-                        //   style: TextStyle(
-                        //     color: Colors.grey[500],
-                        //     fontSize: 12,
-                        //   ),
-                        // ),
+                        SizedBox(width: 4),
+                        // Add social proof content here when needed
                       ],
                     ),
                   ],
@@ -250,6 +242,109 @@ class Welcome extends StatelessWidget {
           fontSize: 12,
           fontWeight: FontWeight.w500,
         ),
+      ),
+    );
+  }
+}
+
+class MainNavigationPage extends StatefulWidget {
+  final int initialIndex;
+  const MainNavigationPage({super.key, this.initialIndex = 0});
+
+  @override
+  State<MainNavigationPage> createState() => _MainNavigationPageState();
+}
+
+class _MainNavigationPageState extends State<MainNavigationPage> {
+  late int _currentIndex;
+  
+  // Use late initialization to avoid creating widgets unnecessarily
+  late final List<Widget> _pages;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentIndex = widget.initialIndex; // Use the passed initial index
+    _pages = [
+      const HomePage(),           // Index 0 - Home
+      ShopSearchPage(),          // Index 1 - Search
+      AddToCartPage(
+        productId: '', 
+        productName: '', 
+        productPrice: 0.0, 
+        productImage: '', 
+        selectedQuantity: 1,
+      ),          // Index 2 - Cart (Using proper CartPage instead of AddToCartPage)
+      const ProfilePage(),       // Index 3 - Profile
+    ];
+  }
+
+  void _onTabTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: IndexedStack(
+        index: _currentIndex,
+        children: _pages,
+      ),
+      bottomNavigationBar: _buildBottomNavigationBar(),
+    );
+  }
+
+  Widget _buildBottomNavigationBar() {
+    return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, -2),
+          ),
+        ],
+      ),
+      child: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.black,
+        selectedItemColor: const Color.fromARGB(255, 53, 243, 104), // Using your app's green color
+        unselectedItemColor: Colors.white60,
+        currentIndex: _currentIndex,
+        onTap: _onTabTapped,
+        elevation: 0,
+        selectedLabelStyle: const TextStyle(
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+        unselectedLabelStyle: const TextStyle(
+          fontWeight: FontWeight.w400,
+          fontSize: 11,
+        ),
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            activeIcon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search_outlined),
+            activeIcon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart_outlined),
+            activeIcon: Icon(Icons.shopping_cart),
+            label: 'Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            activeIcon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
       ),
     );
   }

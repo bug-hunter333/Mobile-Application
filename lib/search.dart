@@ -20,7 +20,7 @@ class _ShopSearchPageState extends State<ShopSearchPage>
   // Trending items data
   final List<Map<String, dynamic>> trendingItems = [
     {
-      'title': 'DUMBELLS ❚█══█❚',
+      'title': 'DUMBELLS ',
       'page': Dumbellspage(),
       'keywords': ['dumbells', 'dumbbells', 'weights', 'free weights']
     },
